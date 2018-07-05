@@ -1,0 +1,75 @@
+<!--{include index_header}-->
+<!--{include pt_left_menu}-->
+  
+  <div class="layui-body">
+    <!-- 内容主体区域 -->
+	<div class="postnav">财务</div>
+	<div class="layuibodycont">
+		<div class="clearfix sdktop">
+			<a href="page-1-运营平台6财务_2充值.html"><span class="addads">充值</span></a>
+		</div>
+		<div class="clearfix mt10">
+			<table class="layui-table">
+			  <thead>
+				<tr>
+				  <th>充值时间</th>
+				  <th>金额</th>
+				  <th>广告主</th>
+				  <th>汇款银行</th>
+				  <th>汇款单号</th>
+				  <th>类型</th>
+				</tr> 
+			  </thead>
+			  <tbody>
+				<tr>
+				  <td>2018-06-27</td>
+				  <td>￥300.00</td>
+				  <td>18600235162</td>
+				  <td>北京银行百子湾支行</td>
+				  <td>3862613616513</td>
+				  <td><span class="opearbtn active">现金</span></td>
+				</tr>
+				<tr>
+				  <td>2018-06-27</td>
+				  <td>￥300.00</td>
+				  <td>18600235162</td>
+				  <td>北京银行百子湾支行</td>
+				  <td>3862613616513</td>
+				  <td><span class="opearbtn active">现金</span></td>
+				</tr>
+				<tr>
+				  <td>2018-06-27</td>
+				  <td>￥300.00</td>
+				  <td>18600235162</td>
+				  <td>北京银行百子湾支行</td>
+				  <td>3862613616513</td>
+				  <td><span class="opearbtn active">现金</span></td>
+				</tr>
+			  </tbody>
+			</table>
+			
+			<div id="demo0" class="pages"></div>
+		</div>
+    </div>
+  </div>
+  <!--<div class="site-tree-mobile layui-hide">
+	  <i class="layui-icon layui-icon01"></i>
+  </div>-->
+
+</div>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="layui/layui.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+<script>
+layui.use(['laypage', 'layer'], function(){
+  var laypage = layui.laypage
+  ,layer = layui.layer;
+  //总页数低于页码总数
+  laypage.render({
+    elem: 'demo0'
+    ,count: 50 //数据总数
+  });
+  });
+</script>
+</body>
+</html>

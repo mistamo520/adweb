@@ -1,0 +1,67 @@
+<!--{include index_header}-->
+<!--{include pt_left_menu}-->
+  
+  <div class="layui-body">
+    <!-- 内容主体区域 -->
+	<div class="postnav">财务 - 充值列表 - <span class="">为广告主充值</span></div>
+	<div class="layuibodycont">
+		<div class="clearfix formblock">
+			<p class="formtitle">充值</p>
+			<form class="layui-form autoform">
+				<div class="layui-form-item">
+					<label class="layui-form-label">金额：</label>
+					<div class="layui-input-block">
+					  <input type="text" name="title"  placeholder="" class="layui-input" />
+					</div>
+				  </div>
+				  <div class="layui-form-item">
+					<label class="layui-form-label">选择广告主：</label>
+					<div class="layui-input-block">
+					 <select name="interest" lay-filter="aihao">
+						<option value=""></option>
+						<option value="0">001</option>
+						<option value="1" selected="">002</option>
+						<option value="2">003</option>
+						<option value="3">004</option>
+						<option value="4">005</option>
+					  </select>
+					</div>
+				  </div>
+				  <div class="layui-form-item">
+					<label class="layui-form-label">汇款银行：</label>
+					<div class="layui-input-block">
+					  <input type="text" name="title"  placeholder="" class="layui-input" />
+					</div>
+				  </div>
+				  <div class="layui-form-item">
+					<label class="layui-form-label">汇款单号：</label>
+					<div class="layui-input-block">
+					  <input type="text" name="title"  placeholder="" class="layui-input" />
+					</div>
+				  </div>
+				  <div class="layui-form-item">
+					<label class="layui-form-label">充值类型：</label>
+					<div class="layui-input-block">
+					  <span class="typepan">现金</span>
+					</div>
+				  </div>
+				  <div class="layui-form-item">
+					<div class="layui-input-block formopearbtn">
+					  <button class="layui-btn layui-btn-primary resetbtn">取消</button>
+					  <button class="layui-btn addbtn" lay-submit="" lay-filter="demo1">充值</button>
+					</div>
+				  </div>
+			</form>
+		</div>
+    </div>
+  </div>
+  <!--<div class="site-tree-mobile layui-hide">
+	  <i class="layui-icon layui-icon01"></i>
+  </div>-->
+
+</div>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="layui/layui.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+</body>
+</html>

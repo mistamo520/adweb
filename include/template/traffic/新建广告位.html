@@ -1,0 +1,76 @@
+<!--{include index_header}-->
+<!--{include tf_left_menu}-->
+  
+  <div class="layui-body">
+    <!-- 内容主体区域 -->
+	<div class="layuibodycont">
+		<div class="clearfix formblock">
+			<form class="layui-form compform">
+				<p class="formtitle">新建广告位</p>
+				<div class="layui-form-item">
+					<label class="layui-form-label">广告位ID：</label>
+					<div class="layui-input-block">
+					  <p class="fl inputtips">3561dfdf6</p>
+					</div>
+				  </div>
+				  <div class="layui-form-item">
+					<label class="layui-form-label">标题：</label>
+					<div class="layui-input-block">
+					  <input type="text" name="title"  placeholder="" class="layui-input" />
+					</div>
+				  </div>
+				  <div class="layui-form-item">
+					<label class="layui-form-label">简介：</label>
+					<div class="layui-input-block">
+					  <input type="text" name="title"  placeholder="" class="layui-input" />
+					</div>
+				  </div>
+				  <div class="layui-form-item">
+					<label class="layui-form-label">icon：</label>
+					<div class="layui-input-block">
+					  <div class="file-input-wrapper iconfiles">
+						<input type="button" class="file_btn" value="">
+						<input type="file" class="file-input" value="">
+						<!--<img src="images/dot003.png" class="">-->
+					  </div>
+					  <span class="addfilespro grayfont">建议上传100*100像素的图片</span>
+					</div>
+				  </div>
+				 <!-- <div class="layui-form-item">
+					<label class="layui-form-label">点击单价：</label>
+					<div class="layui-input-block">
+					  <input type="text" name="title" placeholder="" value="0.50" class="layui-input putprice">
+					</div>
+				  </div>-->
+				  <div class="layui-form-item">
+					<div class="layui-input-block formopearbtn">
+					  <button class="layui-btn layui-btn-primary resetbtn">取消</button>
+					  <button class="layui-btn addbtn" lay-submit="" lay-filter="demo1">保存</button>
+					</div>
+				  </div>
+			</form>
+		</div>
+   
+    </div>
+  </div>
+  <!--<div class="site-tree-mobile layui-hide">
+	  <i class="layui-icon layui-icon01"></i>
+  </div>-->
+</div>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="layui/layui.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+<script>
+layui.use(['laypage', 'layer'], function(){
+  var laypage = layui.laypage
+  ,layer = layui.layer;
+  //总页数低于页码总数
+  laypage.render({
+    elem: 'demo0'
+    ,count: 50 //数据总数
+  });
+  });
+
+  </script>
+</body>
+</html>

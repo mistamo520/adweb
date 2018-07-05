@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>运营平台</title>
+	<meta name="renderer" content="webkit">	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">	
+	<meta name="apple-mobile-web-app-capable" content="yes">	
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" media="all"/>
+	<link rel="stylesheet" type="text/css" href="layui/css/layui.css" media="all"/>
+	<!----><link rel="stylesheet" type="text/css" href="css/global.css" media="all"/>
+	<style>
+	.layui-table-cell { height:auto}
+	</style>
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+  <div class="layui-header">
+    <div class="layui-logo">
+		<span class="loginname">20楼</span>
+		<span class="layuitoptags">广告运营平台</span>
+	</div>
+    <!-- 头部区域（可配合layui已有的水平导航） -->
+	<ul class="layui-nav">
+	  <li class="layui-nav-item layui-this">
+		<a href="javascript:;"><img src="images/head.png" class="headerpic" /><span>18600904754</span></a>
+		<dl class="layui-nav-child">
+		  <dd><a href="">退出</a></dd>
+		</dl>
+	  </li>
+	</ul>
+  </div>
+  <div class="layui-side layui-bg-black layui-larry-side">
+    <div class="layui-side-scroll">
+      <ul class="layui-nav layui-nav-tree" lay-filter="test">
+         <li class="layui-nav-item">
+			<a href="运营平台首页.html">
+				<i class="iconfont icon-01"></i>
+				<span>首页</span>
+			</a>
+        </li>
+        <li class="layui-nav-item">
+			<a href="page-1-运营平台3流量主_1列表-.html">
+				<i class="iconfont icon-03"></i>
+				<span>流量主</span>
+			</a>
+		</li>
+		<li class="layui-nav-item">
+          <a href="page-1-运营平台2广告主_1列表.html">
+				<i class="iconfont icon-02"></i>
+				<span>广告主</span>
+			</a>
+        </li>
+        <li class="layui-nav-item">
+			<a href="page-1-运营平台4广告管理_1列表.html">
+				<i class="iconfont icon-04"></i>
+				<span>广告管理</span>
+			</a>
+		</li>
+		<li class="layui-nav-item">
+			<a href="page-1-运营平台5sdk管理_1列表-.html">
+				<i class="iconfont icon-05"></i>
+				<span>SDK管理</span>
+			</a>
+		</li>
+		<li class="layui-nav-item layui-this layui-nav-itemed">
+			<a href="#">
+				<i class="iconfont icon-06"></i>
+				<span>财务</span>
+			</a>
+			<dl class="layui-nav-child">
+			  <dd class="layui-this">
+				<a href="page-1-运营平台6财务_1充值列表.html">
+				  充值
+				</a>
+			  </dd>
+			  <dd class="">
+				<a href="page-1-运营平台6财务_2开具发票_1.html">
+				  开具发票
+				</a>
+			  </dd>
+			  <dd class="">
+				<a href="提现管理.html">
+				  提现管理
+				</a>
+			  </dd>
+			</dl>
+		</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="layui-body">
+    <!-- 内容主体区域 -->
+	<div class="postnav">财务</div>
+	<div class="layuibodycont">
+		<div class="clearfix sdktop">
+			<a href="page-1-运营平台6财务_2充值.html"><span class="addads">充值</span></a>
+		</div>
+		<div class="clearfix mt10">
+			<table class="layui-table">
+			  <thead>
+				<tr>
+				  <th>充值时间</th>
+				  <th>金额</th>
+				  <th>广告主</th>
+				  <th>汇款银行</th>
+				  <th>汇款单号</th>
+				  <th>类型</th>
+				</tr> 
+			  </thead>
+			  <tbody>
+				<tr>
+				  <td>2018-06-27</td>
+				  <td>￥300.00</td>
+				  <td>18600235162</td>
+				  <td>北京银行百子湾支行</td>
+				  <td>3862613616513</td>
+				  <td><span class="opearbtn active">现金</span></td>
+				</tr>
+				<tr>
+				  <td>2018-06-27</td>
+				  <td>￥300.00</td>
+				  <td>18600235162</td>
+				  <td>北京银行百子湾支行</td>
+				  <td>3862613616513</td>
+				  <td><span class="opearbtn active">现金</span></td>
+				</tr>
+				<tr>
+				  <td>2018-06-27</td>
+				  <td>￥300.00</td>
+				  <td>18600235162</td>
+				  <td>北京银行百子湾支行</td>
+				  <td>3862613616513</td>
+				  <td><span class="opearbtn active">现金</span></td>
+				</tr>
+			  </tbody>
+			</table>
+			
+			<div id="demo0" class="pages"></div>
+		</div>
+    </div>
+  </div>
+  <!--<div class="site-tree-mobile layui-hide">
+	  <i class="layui-icon layui-icon01"></i>
+  </div>-->
+
+</div>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="layui/layui.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+<script>
+layui.use(['laypage', 'layer'], function(){
+  var laypage = layui.laypage
+  ,layer = layui.layer;
+  //总页数低于页码总数
+  laypage.render({
+    elem: 'demo0'
+    ,count: 50 //数据总数
+  });
+  });
+</script>
+</body>
+</html>
